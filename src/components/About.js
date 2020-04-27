@@ -1,9 +1,11 @@
 import React from "react";
+import Pomodoro from "./Pomodoro";
 
 const about = () => {
   return (
     <section id="section-about" className="section-about">
       <h2 className="heading-secondary about__heading">About</h2>
+      <Pomodoro />
 
       <div className="about__column">
         <h3 className="heading-tertiary">Career-wise</h3>
