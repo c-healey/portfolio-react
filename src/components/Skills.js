@@ -10,7 +10,7 @@ const skills = () => {
 
       <div className="card">
         <div className="card__side card__side--front">
-          <div className="card__picture card__picture--1">&nbsp</div>
+          <div className="card__picture card__picture--1"></div>
           <h4 className="card__heading">
             <span className="card__heading-span card__heading-span--1">
               Tech Stack
@@ -39,7 +39,7 @@ const skills = () => {
 
       <div className="card">
         <div className="card__side card__side--front">
-          <div className="card__picture card__picture--3">&nbsp</div>
+          <div className="card__picture card__picture--3"></div>
           <h4 className="card__heading">
             <span className="card__heading-span card__heading-span--3">
               Dev Ops

@@ -22,9 +22,8 @@ class App extends React.Component {
       <div className="container">
         <Nav active={this.state.navActive} onClick={this.toggleNav} />
         <Header />
-
-        <Work />
         <About />
+        <Work />
         <Attributes />
         <Skills />
         <Contact />

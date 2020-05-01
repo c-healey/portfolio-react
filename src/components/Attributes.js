@@ -6,7 +6,7 @@ const attributes = () => {
       <h2 className="heading-secondary features__heading">Key Attributes</h2>
       <div className="feature">
         <svg className="feature__icon">
-          <use xlinkHref="img/sprite.svg#icon-global" />
+          <use xlinkHref="./img/sprite.svg#icon-global" />
         </svg>
         <h4 className="heading-4 heading-4--dark  feature__heading">Builder</h4>
         <p className="feauture__text">

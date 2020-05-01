@@ -1,38 +1,16 @@
 .work-card {
   position: relative;
   width: 100%;
-  &__side {
-    transition: all 0.8s ease;
 
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: all 0.8s ease;
 
-    &--front {
-      background-color: $color-white;
-      display: grid;
-    }
-  }
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
-  // front side styling
-  &__picture {
-    background-size: cover;
-    height: 23rem;
-    background-blend-mode: screen;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  background-color: $color-white;
+  display: grid;
 
-    &--1 {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark
-        ),
-        url(../img/nat-5-small.jpg);
-    }
-  }
   &__heading {
     font-size: 1.6rem;
     font-weight: 300;
@@ -43,13 +21,12 @@
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-    &--1 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($color-secondary-light, 0.85),
-        rgba($color-secondary-dark, 0.85)
-      );
-    }
+
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-secondary-light, 0.85),
+      rgba($color-secondary-dark, 0.85)
+    );
   }
   &__details {
     padding: 3rem;
@@ -67,6 +44,9 @@
       }
     }
   }
+  &-btn-box {
+    margin-top: 3rem;
+  }
 
   // MOBILE CARD no :hover state
 
@@ -76,16 +56,8 @@
     -moz-perspective: 150rem;
     position: relative;
     height: auto;
-    border-radius: 3px;
-    background-color: $color-white;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
-
-    &__side {
-      height: auto;
-      position: relative;
-      box-shadow: none;
-      border-radius: 0;
-    }
+    height: auto;
+    position: relative;
   }
 }

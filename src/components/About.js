@@ -3,36 +3,52 @@ import Pomodoro from "./Pomodoro";
 
 const about = () => {
   return (
-    <section id="section-about" className="section-about">
+    <section id="section-about" className="grid left center-col col-2">
       <h2 className="heading-secondary about__heading">About</h2>
-      <Pomodoro />
 
-      <div className="about__column">
-        <h3 className="heading-tertiary">Career-wise</h3>
+      <div className="grid col-1 left about__column">
+        <h3 className="heading-tertiary">Welcome to my playground</h3>
         <p className="paragraph">
-          I’m returning to my software development roots after a long break. I
-          like the creativity in building things. I like a degree of stability
-          too. When the 2007 great recession hit I was laid off when Cerberus
-          acquired Chrysler from Daimler. My friends who stayed in development
-          had work, I did not. The demand for software developers is high and
-          the obstacles to learning gone. I’m back doing one of my favorite
-          things.{" "}
+          It is a work in progress. The most recent major update is converting
+          from a WordPress site to a React SPA. Being up against a timeline, the
+          first implementation is a basic one-page React site. Routers and Redux
+          will follow.
         </p>
-        <a href="/CV" className="btn-txt about__btn">
-          Curriculum Vitae &rarr;
-        </a>
+        <p className="paragraph">
+          The fun elements like the animated tomato above and the ‘outer limits’
+          Work filter button were created as course lessons and rewritten as
+          React Components. You’ll find these projects inserted throughout my
+          site. These are the type of components I create when I need a break
+          from practicing React and Redux, Routers.{" "}
+        </p>
+        <p className="paragraph">
+          The Work section is the most active. I’ve been doing a lot of comp to
+          React mini projects from FrontEndMentor.io . Other course work
+          includes modern react/redux, Vanilla JavaScript exercises.{" "}
+        </p>
+        <p className="paragraph">
+          What is next? More practice. Practice, practice, practice. In line
+          with my life goal to travel while working remotely, to practice some
+          data visualization to help decide where to visit.
+        </p>
       </div>
-      <div className="about__column">
-        <h3 className="heading-tertiary">
-          Mom, wife, animal friend, label reader{" "}
-        </h3>
-        <p className="paragraph ">
-          ... and though I love my country, I fear our government. So much so
-          that I'd like to move to Spain. I post my favorite things on Flying
-          Pancakes. You’ll meet my pets and may want to come to dinner when my
-          son is home. He’s the chef.
-        </p>
-        <a href="#" className="btn-txt about__btn">
+      <div className="grid col-1 center about__column">
+        <Pomodoro />
+      </div>
+      <div className="grid col-3  center full-width">
+        <a
+          href="https://linkedin.com/in/c-healey"
+          className="btn-txt about__btn"
+        >
+          Linked In &rarr;
+        </a>
+        <a href="https://github.com/c-healey" className="btn-txt about__btn">
+          GitHub &rarr;
+        </a>
+        <a
+          href="https://flying-pancakes77.tumblr.com/"
+          className="btn-txt about__btn"
+        >
           Flying Pancakes &rarr;
         </a>
       </div>

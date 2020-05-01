@@ -39,13 +39,13 @@ body {
   //focus is always on the columns
   // the 1fr centers content in the middle of the page and also allows for full bleed of center content
 
-  grid-template-rows: 95vh repeat(6, min-content);
+  grid-template-rows: 95vh repeat(6, auto);
   grid-template-columns:
-    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+    [full-start] minmax(4rem, 1fr) [center-start-wide] minmax(2rem, 1fr) [center-start] repeat(
       auto-fit,
       [col-start] minmax(34rem, 1fr) [col-end ]
     )
-    [center-end] minmax(6rem, 1fr) [full-end];
+    [center-end] minmax(4rem, 1fr) [center-end-wide] minmax(2rem, 1fr) [full-end];
   grid-row-gap: 10rem;
   justify-content: center;
   align-content: center;
@@ -88,6 +88,7 @@ body {
   justify-items: center;
   justify-content: center;
   align-items: center;
+  align-content: center;
   text-align: center;
 }
 .col-1 {
@@ -101,6 +102,15 @@ body {
 .col-3 {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+}
+.full-width {
+  grid-column: 1/-1;
+}
+.center-col {
+  grid-column: center-start/center-end;
+}
+.center-col-wide {
+  grid-column: center-start-wide/center-end-wide;
 }
 iframe {
   width: 100%;
