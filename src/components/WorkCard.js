@@ -11,7 +11,6 @@ class WorkCard extends React.Component {
   //   liveSite: "https://c-healey.github.io/weather-app/",
   // },
   render() {
-    console.log(this.props);
     let detail = this.props.cardDetail;
 
     let keyIdx = this.props.keyIdx;
@@ -26,7 +25,7 @@ class WorkCard extends React.Component {
         <span className="work-card__heading-span ">
           <h4 className="work-card__heading">{detail.title}</h4>
         </span>
-        <iframe src={detail.liveSite}></iframe>
+        <iframe title={`iframe-${keyIdx}`} src={detail.liveSite}></iframe>
 
         <div className="work-card__details">
           <ul>

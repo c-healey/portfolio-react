@@ -6,9 +6,12 @@ class Pomodoro extends React.Component {
   };
   tomatoLeaves = () => {
     let degrees = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-    let dots = degrees.map((degree) => {
+    let dots = degrees.map((degree, idx) => {
       return (
-        <div className={`leaf rotations rotations-12-${degree}`}>
+        <div
+          className={`leaf rotations rotations-12-${degree}`}
+          key={`leaf-${idx}`}
+        >
           <div className="dot"></div>
         </div>
       );
@@ -17,16 +20,24 @@ class Pomodoro extends React.Component {
   };
   tomatoPulp = () => {
     let degrees = [1, 2, 3, 4, 5, 6];
-    let dots = degrees.map((degree) => {
-      return <div className={`pulp rotations rotations-6-${degree}`}></div>;
+    let dots = degrees.map((degree, idx) => {
+      return (
+        <div
+          className={`pulp rotations rotations-6-${degree}`}
+          key={`pulp-${idx}`}
+        ></div>
+      );
     });
     return dots;
   };
   tomatoPlacenta = () => {
     let degrees = [1, 2, 3, 4, 5, 6];
-    let dots = degrees.map((degree) => {
+    let dots = degrees.map((degree, idx) => {
       return (
-        <div className={`plac rotations rotations-6-${degree}`}>
+        <div
+          className={`plac rotations rotations-6-${degree}`}
+          key={`plac-${idx}`}
+        >
           <div className="dot"></div>
         </div>
       );
@@ -35,9 +46,12 @@ class Pomodoro extends React.Component {
   };
   tomatoSeeds = () => {
     let degrees = [1, 2, 3, 4, 5, 6];
-    let dots = degrees.map((degree) => {
+    let dots = degrees.map((degree, idx) => {
       return (
-        <div className={` rotations rotations-6-${degree}`}>
+        <div
+          className={` rotations rotations-6-${degree}`}
+          key={`seeds-${idx}`}
+        >
           <div className="small square one"></div>
           <div className="small square two"></div>
           <div className="small square three"></div>

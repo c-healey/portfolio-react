@@ -138,25 +138,26 @@ const workDetail = [
     category: ["Featured", "JavaScript", "JSON"],
   },
 ];
-const filters = [
-  "Featured",
-  "JavaScript",
-  "JSON",
-  "React",
-  "Hooks",
-  "Comp2HTML",
-];
+// const filters = [
+//   "Featured",
+//   "JavaScript",
+//   "JSON",
+//   "React",
+//   "Hooks",
+//   "Comp2HTML",
+// ];
 
 const work = () => {
   const viewAllWork = () => {
-    [...document.querySelectorAll(".work-card")].map((card) => {
+    [...document.querySelectorAll(".work-card")].forEach((card) => {
       if (!card.classList.contains("featured")) {
         card.classList.toggle("hide");
       }
     });
-    [...document.querySelectorAll(".work-filter")].map((filter) => {
+    [...document.querySelectorAll(".work-filter")].forEach((filter) => {
       filter.classList.toggle("hide");
     });
+    return null;
   };
   return (
     <section
@@ -187,7 +188,7 @@ const work = () => {
 
       {workDetail.map((detail, idx) => {
         let hide = idx >= 3 ? true : false;
-        return <WorkCard keyIdx={idx + 1} cardDetail={detail} hide={hide} />;
+        return <WorkCard key={idx + 1} cardDetail={detail} hide={hide} />;
       })}
     </section>
   );

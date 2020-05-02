@@ -16,7 +16,7 @@ const header = () => {
         bring design to life
       </h1>
 
-      <a href="#" className="btn btn--white btn--animated jself-center">
+      <a href="#section-book" className="btn btn--white btn--animated ">
         Get Started
       </a>
     </header>

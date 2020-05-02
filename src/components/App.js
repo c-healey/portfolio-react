@@ -2,10 +2,10 @@ import React from "react";
 import Header from "../components/Header";
 import About from "../components/About";
 import Attributes from "../components/Attributes";
-import Skills from "../components/Skills";
+// import Skills from "../components/Skills";
 import Work from "../components/Work";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
+// import Contact from "../components/Contact";
+// import Footer from "../components/Footer";
 import Nav from "../components/Navigation";
 
 import "../sass/main.scss";
@@ -13,8 +13,6 @@ import "../sass/main.scss";
 class App extends React.Component {
   state = { navActive: false };
   toggleNav = () => {
-    console.log(this.state.navActive);
-
     this.setState({ navActive: !this.state.navActive });
   };
   render() {
@@ -23,11 +21,11 @@ class App extends React.Component {
         <Nav active={this.state.navActive} onClick={this.toggleNav} />
         <Header />
         <About />
-        <Work />
+        {/* <Work /> */}
         <Attributes />
-        <Skills />
+        {/* <Skills />
         <Contact />
-        <Footer />
+        <Footer /> */}
       </div>
     );
   }

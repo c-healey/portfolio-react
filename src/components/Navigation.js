@@ -1,7 +1,6 @@
 import React from "react";
 class Nav extends React.Component {
   onClickNav = (e) => {
-    console.log("onclick nav e.target.className", e.target.className);
     if (
       e.target.className === "navigation__checkbox" ||
       e.target.className === "navigation__link"
