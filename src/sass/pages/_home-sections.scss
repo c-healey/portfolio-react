@@ -1,17 +1,3 @@
-.section-skills {
-  background-color: $color-grey-light-1;
-  padding: 0;
-
-  grid-column: center-start/center-end;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
-  grid-gap: 6rem;
-
-  justify-content: center;
-  align-content: center;
-}
-
 .section-book {
   background-image: linear-gradient(
     to right bottom,

@@ -1,73 +1,59 @@
 import React from "react";
+const skillsData = [
+  {
+    title: "Tech Stack",
+    list: ["HTML5", "CSS3", "JavaScript", "React"],
+  },
+  {
+    title: "Dev Ops",
+    list: ["Git", "CLI", "NPM", "WebPack"],
+  },
+];
+const skillsCard = () => {
+  return skillsData.map((skill, idx) => {
+    return (
+      <div className="card" key={`skill-card-${idx}`}>
+        <div className="card__side card__side--front">
+          <div className={`card__picture card__picture--${idx + 1}`}></div>
+          <h4 className="card__heading">
+            <span
+              className={`card__heading-span card__heading-span--${idx + 1}`}
+            >
+              {skill.title}
+            </span>
+          </h4>
+          <div className="card__details">
+            <ul>
+              {skill.list.map((list, idx) => {
+                return <li key={`skill-list-${idx}`}>{list}</li>;
+              })}
+            </ul>
+          </div>
+        </div>
+        <div
+          className={`card__side card__side--back card__side--back-${idx + 1}`}
+        >
+          <div className="card__cta">
+            <div className="card__price-box">
+              <a href="#section-book" className="btn btn--white">
+                Get in Touch
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  });
+};
 
 const skills = () => {
   return (
-    <section className="section-skills" id="section-skills">
-      <h2 className="heading-secondary skills__heading">
+    <section className="grid center-col section-skills" id="section-skills">
+      <h2 className="heading-secondary full-width center skills__heading">
         {" "}
         Skills and Expertise
       </h2>
-
-      <div className="card">
-        <div className="card__side card__side--front">
-          <div className="card__picture card__picture--1"></div>
-          <h4 className="card__heading">
-            <span className="card__heading-span card__heading-span--1">
-              Tech Stack
-            </span>
-          </h4>
-          <div className="card__details">
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaSript</li>
-              <li>PHP</li>
-              <li>WordPress</li>
-            </ul>
-          </div>
-        </div>
-        <div className="card__side card__side--back card__side--back-1">
-          <div className="card__cta">
-            <div className="card__price-box">
-              <a href="#popup" className="btn btn--white">
-                Get in Touch
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="card">
-        <div className="card__side card__side--front">
-          <div className="card__picture card__picture--3"></div>
-          <h4 className="card__heading">
-            <span className="card__heading-span card__heading-span--3">
-              Dev Ops
-            </span>
-          </h4>
-          <div className="card__details">
-            <ul>
-              <li>LAMP</li>
-              <li>GIT</li>
-              <li>CLI</li>
-              <li>Nodejs</li>
-              <li>Gulp</li>
-            </ul>
-          </div>
-        </div>
-        <div className="card__side card__side--back card__side--back-3">
-          <div className="card__cta">
-            <div className="card__price-box">
-              <a href="#popup" className="btn btn--white">
-                Get in Touch
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a href="#" className="btn btn--green skills__btn">
-        Learn More
-      </a>
+      {skillsCard()}
     </section>
   );
 };
