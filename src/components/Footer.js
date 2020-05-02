@@ -8,16 +8,16 @@ const footer = () => {
       <div className="footer__navigation">
         <ul className="footer__list">
           <li className="footer__item">
-            <a href="#" className="footer__link">
+            <a href="#section-header" className="footer__link">
               Home
             </a>
           </li>
           <li className="footer__item">
-            <a href="#" className="footer__link">
+            <a href="#section-book" className="footer__link">
               Get in Touch
             </a>
           </li>
-          <li className="footer__item">
+          {/* <li className="footer__item">
             <a href="#" className="footer__link">
               Privacy policy
             </a>
@@ -26,13 +26,13 @@ const footer = () => {
             <a href="#" className="footer__link">
               Terms
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
 
       <p className="footer__copyright">
         Built by{" "}
-        <a href="#" className="footer__link">
+        <a href="#section-header" className="footer__link">
           Catherine Healey
         </a>
         &nbsp;Copyright &copy; 2019 Design adapted from Jonas Schmedtmann -

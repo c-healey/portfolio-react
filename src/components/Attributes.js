@@ -54,7 +54,10 @@ const attributes = () => {
     });
   };
   return (
-    <section className="grid col-3 left center-col section-features">
+    <section
+      id="section-features"
+      className="grid col-3 left center-col section-features"
+    >
       <h2 className="heading-secondary full-width work__heading">
         Key Attributes
       </h2>

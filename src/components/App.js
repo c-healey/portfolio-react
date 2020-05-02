@@ -4,8 +4,8 @@ import About from "../components/About";
 import Attributes from "../components/Attributes";
 import Skills from "../components/Skills";
 import Work from "../components/Work";
-// import Contact from "../components/Contact";
-// import Footer from "../components/Footer";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 import Nav from "../components/Navigation";
 
 import "../sass/main.scss";
@@ -24,8 +24,8 @@ class App extends React.Component {
         <Work />
         <Attributes />
         <Skills />
-        {/* <Contact />
-        <Footer /> */}
+        <Contact />
+        <Footer />
       </div>
     );
   }

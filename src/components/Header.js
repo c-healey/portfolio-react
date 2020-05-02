@@ -2,7 +2,10 @@ import React from "react";
 
 const header = () => {
   return (
-    <header className="grid col-1 center full-width section-header">
+    <header
+      id="section-header"
+      className="grid col-1 center full-width section-header"
+    >
       <div className="bg-video">
         <video className="bg-video__content" autoPlay muted loop>
           <source src="./portfolio-react/img/video.mp4" type="video/mp4" />
