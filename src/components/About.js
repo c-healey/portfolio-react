@@ -1,12 +1,13 @@
 import React from "react";
 import Pomodoro from "./Pomodoro";
+import Covid19 from "./Covid19";
 
 const about = () => {
   return (
     <section id="section-about" className="grid left center-col col-2">
       <h2 className="heading-secondary about__heading">About</h2>
 
-      <div className="grid col-1 left about__column">
+      <div className="grid col-1 left ">
         <h3 className="heading-tertiary">Welcome to my playground</h3>
         <p className="paragraph">
           It is a work in progress. The most recent major update is converting
@@ -15,11 +16,11 @@ const about = () => {
           will follow.
         </p>
         <p className="paragraph">
-          The fun elements like the animated tomato above and the ‘outer limits’
-          Work filter button were created as course lessons and rewritten as
-          React Components. You’ll find these projects inserted throughout my
-          site. These are the type of components I create when I need a break
-          from practicing React and Redux, Routers.{" "}
+          The fun elements like the animation to the right and the ‘outer
+          limits’ Work filter button were created as course lessons and
+          rewritten as React Components. You’ll find these projects inserted
+          throughout my site. These are the type of components I create when I
+          need a break from practicing React and Redux, Routers.{" "}
         </p>
         <p className="paragraph">
           The Work section is the most active. I’ve been doing a lot of comp to
@@ -32,10 +33,11 @@ const about = () => {
           data visualization to help decide where to visit.
         </p>
       </div>
-      <div className="grid col-1 center about__column">
+      <div className="grid col-1 center ">
         <Pomodoro />
+        {/* <Covid19 /> */}
       </div>
-      <div className="grid col-3  center full-width">
+      <div className="grid col-4  center full-width">
         <a
           href="https://linkedin.com/in/c-healey"
           className="btn-txt about__btn"
@@ -44,6 +46,12 @@ const about = () => {
         </a>
         <a href="https://github.com/c-healey" className="btn-txt about__btn">
           GitHub &rarr;
+        </a>
+        <a
+          href="https://c-healey.com/pomodoros/"
+          className="btn-txt about__btn"
+        >
+          Pomodoro Moments &rarr;
         </a>
         <a
           href="https://flying-pancakes77.tumblr.com/"
