@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 class Nav extends React.Component {
   onClickNav = (e) => {
     if (
@@ -41,11 +42,16 @@ class Nav extends React.Component {
         <nav className="navigation__nav" id="navi-toggle">
           <ul className="navigation__list">
             <li className="navigation__item">
-              <a href="#section-about" className="navigation__link">
-                <span>01</span>About
-              </a>
+              <Link to="/" className="navigation__link">
+                <span>01</span>Home
+              </Link>
             </li>
             <li className="navigation__item">
+              <Link to="/work" className="navigation__link">
+                <span>02</span>Work
+              </Link>
+            </li>
+            {/* <li className="navigation__item">
               <a href="#section-features" className="navigation__link">
                 <span>02</span>Key Attributes
               </a>
@@ -69,7 +75,7 @@ class Nav extends React.Component {
               <a href="/blog" className="navigation__link">
                 <span>06</span>Blog
               </a>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

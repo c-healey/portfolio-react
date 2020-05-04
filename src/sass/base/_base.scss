@@ -39,7 +39,7 @@ body {
   //focus is always on the columns
   // the 1fr centers content in the middle of the page and also allows for full bleed of center content
 
-  grid-template-rows: 95vh repeat(6, auto);
+  grid-template-rows: auto;
   grid-template-columns:
     [full-start] minmax(4rem, 1fr) [center-start-wide] minmax(2rem, 1fr) [center-start] repeat(
       auto-fit,

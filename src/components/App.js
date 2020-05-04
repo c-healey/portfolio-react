@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "../components/Header";
-import About from "../components/About";
-import Attributes from "../components/Attributes";
-import Skills from "../components/Skills";
-import Work from "../components/Work";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
-import Nav from "../components/Navigation";
+import { HashRouter, Route, Switch } from "react-router-dom";
+import Header from "./Header";
+import Home from "./Page/Home";
+import PomodoroMoments from "./Page/PomodoroMoments";
+import WorkPage from "./Page/WorkPage";
+
+import Footer from "./Footer";
+import Nav from "./Navigation";
 
 import "../sass/main.scss";
 
@@ -17,15 +17,19 @@ class App extends React.Component {
   };
   render() {
     return (
-      <div className="container">
-        <Nav active={this.state.navActive} onClick={this.toggleNav} />
-        <Header />
-        <About />
-        <Work />
-        <Attributes />
-        <Skills />
-        <Contact />
-        <Footer />
+      <div className="">
+        <HashRouter>
+          <div className="container">
+            <Nav active={this.state.navActive} onClick={this.toggleNav} />
+
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/work" component={WorkPage} />
+              <Route path="/pomodoro-moments" component={PomodoroMoments} />
+            </Switch>
+            <Footer />
+          </div>
+        </HashRouter>
       </div>
     );
   }
