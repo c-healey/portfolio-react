@@ -14,12 +14,12 @@ class Home extends React.Component {
   render() {
     return (
       <div className="full-width container">
-        {/* <Header />
+        <Header />
         <About />
-        <Work /> */}
+        <Work />
         <Attributes />
-        {/* <Skills />
-        <Contact /> */}
+        <Skills />
+        <Contact />
       </div>
     );
   }
