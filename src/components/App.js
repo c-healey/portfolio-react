@@ -19,8 +19,8 @@ class App extends React.Component {
     return (
       <div className="">
         <HashRouter>
-          <div className="container">
-            <Nav active={this.state.navActive} onClick={this.toggleNav} />
+          <div className="">
+            {/* <Nav active={this.state.navActive} onClick={this.toggleNav} /> */}
 
             <Switch>
               <Route path="/" exact component={Home} />

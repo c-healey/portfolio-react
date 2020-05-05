@@ -2,8 +2,8 @@ import React from "react";
 
 const contact = () => {
   return (
-    <section id="section-book" className="section-book full-width">
-      <div className="book">
+    <section id="section-book" className="grid center section-book full-width">
+      <div className="grid left col-1 book">
         <div className="book__form">
           <h2 className="heading-secondary left full-width">
             Get in Touch now

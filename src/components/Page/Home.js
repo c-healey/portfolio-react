@@ -13,7 +13,7 @@ class Home extends React.Component {
   };
   render() {
     return (
-      <div className="full-width container">
+      <div className="container">
         <Header />
         <About />
         <Work />

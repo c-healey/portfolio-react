@@ -3,7 +3,7 @@ import Pomodoro from "./Pomodoro";
 
 const about = () => {
   return (
-    <section id="section-about" className="grid left col-2 center-col ">
+    <section id="section-about" className="grid col-2 center  center-col">
       <h2 className="heading-secondary full-width center ">About</h2>
 
       <div className="grid col-1 left ">
@@ -32,7 +32,7 @@ const about = () => {
           data visualization to help decide where to visit.
         </p>
       </div>
-      <div className="grid col-1 center ">
+      <div className="grid col-1 center mobile-row-1">
         <Pomodoro />
         {/* <Covid19 /> */}
       </div>
