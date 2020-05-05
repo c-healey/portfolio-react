@@ -175,8 +175,8 @@ const work = () => {
         </div>
       </div>
 
-      <h2 className="heading-secondary full-width work__heading"> Work</h2>
-      <div className="grid center col-1 full-width ">
+      <h2 className="heading-secondary center full-width "> Work</h2>
+      <div className="grid col-1 center full-width ">
         <OuterLimits />
         <div className="work-filter " onClick={() => viewAllWork()}>
           View All
@@ -188,7 +188,7 @@ const work = () => {
 
       {workDetail.map((detail, idx) => {
         let hide = idx >= 3 ? true : false;
-        return <WorkCard key={idx + 1} cardDetail={detail} hide={hide} />;
+        return <WorkCard keyIdx={idx + 1} cardDetail={detail} hide={hide} />;
       })}
     </section>
   );

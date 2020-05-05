@@ -2,29 +2,7 @@
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
   grid-gap: 3rem;
-}
-.work {
-  // 3 items in work section - heading, content and btn
-  &__heading {
-    justify-self: center;
-  }
-  &__content {
-    // contains the image and the work nav both occupy the same row and column the nav sits atop the image ate the upper right
-    position: relative;
-
-    overflow: hidden;
-  }
-
-  &__btn {
-    justify-self: center;
-  }
-}
-.work__img {
-  // inside content div under .work-nav
-  grid-row: 1/-1;
-  grid-column: 1/-1;
-  justify-self: center;
-  width: 100%;
+  padding-top: 8rem;
 }
 
 .work-filter,

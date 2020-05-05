@@ -49,7 +49,7 @@ const skillsCard = () => {
 const skills = () => {
   return (
     <section className="grid center-col section-skills" id="section-skills">
-      <h2 className="heading-secondary full-width center skills__heading">
+      <h2 className="heading-secondary center full-width">
         {" "}
         Skills and Expertise
       </h2>

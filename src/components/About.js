@@ -1,11 +1,10 @@
 import React from "react";
 import Pomodoro from "./Pomodoro";
-import Covid19 from "./Covid19";
 
 const about = () => {
   return (
-    <section id="section-about" className="grid left center-col col-2">
-      <h2 className="heading-secondary about__heading">About</h2>
+    <section id="section-about" className="grid left col-2 center-col ">
+      <h2 className="heading-secondary full-width center ">About</h2>
 
       <div className="grid col-1 left ">
         <h3 className="heading-tertiary">Welcome to my playground</h3>
@@ -37,26 +36,16 @@ const about = () => {
         <Pomodoro />
         {/* <Covid19 /> */}
       </div>
-      <div className="grid col-4  center full-width">
-        <a
-          href="https://linkedin.com/in/c-healey"
-          className="btn-txt about__btn"
-        >
+      <div className="grid col-2-max left">
+        <a href="https://linkedin.com/in/c-healey" className="btn-txt ">
           Linked In &rarr;
         </a>
-        <a href="https://github.com/c-healey" className="btn-txt about__btn">
+        <a href="https://github.com/c-healey" className="btn-txt ">
           GitHub &rarr;
         </a>
-        <a
-          href="https://c-healey.com/pomodoros/"
-          className="btn-txt about__btn"
-        >
-          Pomodoro Moments &rarr;
-        </a>
-        <a
-          href="https://flying-pancakes77.tumblr.com/"
-          className="btn-txt about__btn"
-        >
+      </div>
+      <div className="grid  center">
+        <a href="https://flying-pancakes77.tumblr.com/" className="btn-txt ">
           Flying Pancakes &rarr;
         </a>
       </div>
