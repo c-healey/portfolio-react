@@ -13,13 +13,24 @@ class Home extends React.Component {
   };
   render() {
     return (
-      <div className="container">
+      <div>
         <Header />
-        <About />
-        <Work />
-        <Attributes />
-        <Skills />
-        <Contact />
+
+        <div className="container">
+          <About />
+        </div>
+        <div className="container">
+          <Work />
+        </div>
+        <div className="container">
+          <Attributes />
+        </div>
+        <div className="container">
+          <Skills />
+        </div>
+        <div className="container">
+          <Contact />
+        </div>
       </div>
     );
   }

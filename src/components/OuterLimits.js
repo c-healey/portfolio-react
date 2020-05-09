@@ -18,7 +18,7 @@ class OuterLimits extends React.Component {
   };
   render() {
     return (
-      <div className="inner-container" onMouseMove={this.onMouseMove}>
+      <div className="outer-limits-container" onMouseMove={this.onMouseMove}>
         <div className="panel" style={this.state.styleOne} />
         <div className="panel" style={this.state.styleTwo} />
       </div>

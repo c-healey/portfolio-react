@@ -34,24 +34,17 @@ body {
 }
 section {
   grid-gap: 6rem;
+  padding: 6rem 0;
+}
+.base {
   background-color: $color-grey-light-1;
-  padding: 0;
-  padding-top: 6rem;
 }
 .container {
   position: relative;
   display: grid;
-  //focus is always on the columns
-  // the 1fr centers content in the middle of the page and also allows for full bleed of center content
 
   grid-template-rows: auto;
-  // grid-template-columns:
-  //   [full-start] minmax(4rem, 1fr)
-  //   [center-start-wide] minmax(2rem, 1fr)
-  //   [center-start] repeat(auto-fit, [col-start] minmax(34rem, 1fr) [col-end ])
-  //   [center-end]
-  //   minmax(2rem, 1fr) [center-end-wide]
-  //   minmax(4rem, 1fr) [full-end];
+
   grid-template-columns:
     4rem minmax(2rem, 1fr)
     minmax(min-content, 104rem)
@@ -60,8 +53,6 @@ section {
   grid-row-gap: 10rem;
   justify-content: center;
   align-content: center;
-
-  background-color: $color-grey-light-1;
 }
 
 ::selection {
@@ -149,9 +140,10 @@ iframe {
       text-align: center;
     }
   }
-  // .tomato-container {
-  //   transform: scale(0.7);
-  // }
+  .tomato-container,
+  .outer-limits-container {
+    transform: scale(0.7);
+  }
 }
 @include respond(phone) {
   .col-4 {
@@ -159,15 +151,20 @@ iframe {
   }
 }
 @include respond(sm-phone) {
-  .container {
-    grid-template-columns:
-      2rem 1fr
-      minmax(min-content, 200rem)
-      1fr 2rem;
+  .center-col,
+  .center-col-wide {
+    grid-column: 1/-1;
   }
 
+  .container,
   .col-3,
   .col-4 {
     grid-template-columns: 1fr;
+  }
+  .left {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
   }
 }

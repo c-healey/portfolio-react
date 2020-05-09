@@ -1,6 +1,6 @@
 import React from "react";
 import { HashRouter, Route, Switch } from "react-router-dom";
-import Header from "./Header";
+
 import Home from "./Page/Home";
 import PomodoroMoments from "./Page/PomodoroMoments";
 import WorkPage from "./Page/WorkPage";
@@ -17,10 +17,10 @@ class App extends React.Component {
   };
   render() {
     return (
-      <div className="">
+      <div className="base">
         <HashRouter>
-          <div className="">
-            {/* <Nav active={this.state.navActive} onClick={this.toggleNav} /> */}
+          <div>
+            <Nav active={this.state.navActive} onClick={this.toggleNav} />
 
             <Switch>
               <Route path="/" exact component={Home} />

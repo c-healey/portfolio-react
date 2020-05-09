@@ -1,5 +1,5 @@
 .section-book {
-  grid-template-rows: 1fr min-content 1fr;
+  grid-template-rows: auto;
   background-image: linear-gradient(
     to right bottom,
     $color-primary-light,

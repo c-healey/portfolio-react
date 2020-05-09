@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const footer = () => {
   return (
-    <footer id="section-footer" className="full-width container section-footer">
+    <footer id="section-footer" className=" container section-footer">
       <h1 className="heading-secondary center full-width">C Healey</h1>
 
       <div className="grid col-2 left center-col-wide footer__navigation-container">
@@ -30,7 +30,7 @@ const footer = () => {
           Advanced CSS and Sass.
         </p>
       </div>
-      <div className="grid col-3-min left center full-width">
+      <div className="grid col-3-min left center center-col-wide">
         <a href="https://linkedin.com/in/c-healey">
           <i class="book__call-me fab fa-linkedin"></i>
         </a>
