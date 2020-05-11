@@ -58,7 +58,9 @@ const attributes = () => {
       id="section-features"
       className="grid left center-col section-features"
     >
-      <h2 className="heading-secondary center full-width ">Key Attributes</h2>
+      <h2 className="heading-secondary center full-width section-features-heading">
+        Key Attributes
+      </h2>
       {attributeCard()}
     </section>
   );

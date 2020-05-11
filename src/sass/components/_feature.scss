@@ -5,6 +5,9 @@
 
   align-items: start;
   // padding-top: 3rem;
+  &-heading {
+    justify-self: center;
+  }
 }
 
 .feature {
