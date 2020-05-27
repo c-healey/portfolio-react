@@ -5,6 +5,7 @@ import Home from "./Page/Home";
 import PomodoroMoments from "./Page/PomodoroMoments";
 import WorkPage from "./Page/WorkPage";
 import ResourcePage from "./Page/ResourcePage";
+import VSCSetup from "./Page/VSCSetup";
 
 import Footer from "./Footer";
 import Nav from "./Navigation";
@@ -27,6 +28,7 @@ class App extends React.Component {
               <Route path="/" exact component={Home} />
               <Route path="/work" component={WorkPage} />
               <Route path="/resources" component={ResourcePage} />
+              <Route path="/vscsetup" component={VSCSetup} />
               {/* <Route path="/pomodoro-moments" component={PomodoroMoments} /> */}
             </Switch>
             <Footer />

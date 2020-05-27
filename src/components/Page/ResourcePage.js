@@ -18,7 +18,7 @@ const resourceData = [
     title: "Emmet Cheat Sheet",
     url: "https://docs.emmet.io/cheat-sheet/",
     summary:
-      "Essential for writing HTML, Emmet is built into Visual Studio and Codepen to make liffe easier.",
+      "Essential for writing HTML, Emmet is built into Visual Studio and Codepen to make life easier.",
   },
 ];
 const resourceCard = () => {
