@@ -4,6 +4,7 @@ import { HashRouter, Route, Switch } from "react-router-dom";
 import Home from "./Page/Home";
 import PomodoroMoments from "./Page/PomodoroMoments";
 import WorkPage from "./Page/WorkPage";
+import ResourcePage from "./Page/ResourcePage";
 
 import Footer from "./Footer";
 import Nav from "./Navigation";
@@ -25,7 +26,8 @@ class App extends React.Component {
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/work" component={WorkPage} />
-              <Route path="/pomodoro-moments" component={PomodoroMoments} />
+              <Route path="/resources" component={ResourcePage} />
+              {/* <Route path="/pomodoro-moments" component={PomodoroMoments} /> */}
             </Switch>
             <Footer />
           </div>

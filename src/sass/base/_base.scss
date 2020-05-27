@@ -32,7 +32,8 @@ body {
   //   padding: 0;
   // }
 }
-section {
+section,
+.page {
   grid-gap: 6rem;
   padding: 6rem 0;
 }
@@ -118,6 +119,10 @@ section {
 iframe {
   width: 100%;
   height: 40rem;
+}
+.icon {
+  width: 3.5rem;
+  height: 3.5rem;
 }
 @include respond(tab-port) {
   .container {

@@ -20,7 +20,7 @@ const header = () => {
       </h1>
 
       <a href="#section-book" className="btn btn--white btn--animated ">
-        Get Started
+        Get In Touch
       </a>
     </header>
   );

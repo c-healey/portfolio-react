@@ -51,6 +51,11 @@ class Nav extends React.Component {
                 <span>02</span>Work
               </Link>
             </li>
+            <li className="navigation__item">
+              <Link to="/resources" className="navigation__link">
+                <span>02</span>Developer Resources
+              </Link>
+            </li>
             {/* <li className="navigation__item">
               <a href="#section-features" className="navigation__link">
                 <span>02</span>Key Attributes
