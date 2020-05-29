@@ -19,15 +19,18 @@ const contact = () => {
             </a>
           </div>
           <div className="grid col-3-min left">
-            <a href="https://linkedin.com/in/c-healey">
+            <a href="https://linkedin.com/in/c-healey" target="_blank">
               <i class="book__call-me fab fa-linkedin"></i>
             </a>
-            <a href="https://github.com//c-healey">
+            <a href="https://github.com//c-healey" target="_blank">
               <i class="book__call-me fab fa-github-square"></i>
             </a>
 
             <a href="https://twitter.com/cfhealey">
-              <i class="book__call-me fab fa-twitter-square"></i>
+              <i
+                class="book__call-me fab fa-twitter-square"
+                target="_blank"
+              ></i>
             </a>
           </div>
         </div>
