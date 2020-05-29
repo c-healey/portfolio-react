@@ -26,11 +26,8 @@ const contact = () => {
               <i class="book__call-me fab fa-github-square"></i>
             </a>
 
-            <a href="https://twitter.com/cfhealey">
-              <i
-                class="book__call-me fab fa-twitter-square"
-                target="_blank"
-              ></i>
+            <a href="https://twitter.com/cfhealey" target="_blank">
+              <i class="book__call-me fab fa-twitter-square"></i>
             </a>
           </div>
         </div>
