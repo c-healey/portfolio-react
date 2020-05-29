@@ -26,6 +26,7 @@ class App extends React.Component {
 
             <Switch>
               <Route path="/" exact component={Home} />
+              <Route path="/home" component={Home} />
               <Route path="/work" component={WorkPage} />
               <Route path="/resources" component={ResourcePage} />
               <Route path="/vscsetup" component={VSCSetup} />

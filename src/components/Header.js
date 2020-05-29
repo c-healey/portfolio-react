@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const header = () => {
   return (
@@ -19,7 +20,11 @@ const header = () => {
         bring design to life
       </h1>
 
-      <a href="#section-book" className="btn btn--white btn--animated ">
+      <a
+        href="mailto:cathy.healey@gmail.com?subject=Get in Touch from portfolio-react"
+        target="_blank"
+        className="btn btn--white"
+      >
         Get In Touch
       </a>
     </header>

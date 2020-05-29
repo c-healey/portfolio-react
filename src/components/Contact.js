@@ -11,7 +11,12 @@ const contact = () => {
 
           <div className="book__call-me heading-tertiary">248-835-8797</div>
           <div className="book__email-me heading-tertiary">
-            cathy.healey@gmail.com
+            <a
+              href="mailto:cathy.healey@gmail.com?subject=portfolio inquiry"
+              target="_blank"
+            >
+              cathy.healey@gmail.com
+            </a>
           </div>
           <div className="grid col-3-min left">
             <a href="https://linkedin.com/in/c-healey">

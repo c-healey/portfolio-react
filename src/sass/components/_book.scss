@@ -83,6 +83,12 @@
   }
   &__email-me {
     font-size: 3rem;
+    & > a {
+      text-decoration: none;
+      &:visited {
+        color: $color-primary;
+      }
+    }
     @include respond(phone) {
       font-size: 2rem;
     }
